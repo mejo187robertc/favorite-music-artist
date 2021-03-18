@@ -1,44 +1,71 @@
 body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
-.logo{
-    width: 100px;
+.logo {
+  width: 100px;
 }
-.nav-primary{
-    padding: 10px;
+.nav-primary {
+  padding: 10px;
 }
 .mx-8 {
-    margin: 0 8px;
+  margin: 0 8px;
 }
 .bq {
-    border-left: 10px solid black;
-    margin: 0;
-    padding-left: 10px;
+  border-left: 10px solid black;
+  margin: 0;
+  padding-left: 10px;
 }
+.remove-margin-top {
+  margin-top: 0;
+}
+
 /* Desktop Styles */
 @media (min-width: 767px) {
-    .header {
-        display: flex;
-        flex-direction: row-reverse;
-    }
-    .header > * {
-        flex: 1 0;
-    }
-    .hv-center {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .max-width-400 {
-        max-width: 400px;
-    } .albums {
-        /* Style go here */
-        display: flex; }
-        .albums > div {flex: 1 0;}
-       
+  .header {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .header > * {
+    flex: 1 0;
+  }
+  .hv-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .h-center {
+    display: flex;
+    justify-content: center;
+  }
+  .max-width-400 {
+    max-width: 400px;
+  }
+  .albums {
+    /* Style go here */
+    display: flex;
+    gap: 20px;
+  }
+  .albums > div {
+    flex: 1 0;
+    margin: 0 10px;
+  }
+  .albums > div:first-child {
+    margin-left: 0;
+  }
+
+  .albums > div:last-child {
+    margin-right: 0;
+  }
+  /* a more reusable class name */
+  .flex {
+    display: flex;
+  }
+  .flex > * {
+    flex: 1 0;
+  }
 }
