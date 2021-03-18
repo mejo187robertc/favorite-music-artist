@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+    width: 100%;
+}
+.logo{
+    width: 100px;
+}
+.nav-primary{
+    padding: 10px;
+}
+.mx-8 {
+    margin: 0 8px;
+}
+.bq {
+    border-left: 10px solid black;
+    margin: 0;
+    padding-left: 10 px
+}
+/* Desktop Styles */
+@media (min-width: 767px) {
+    .header {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .header > * {
+        flex: 1 0;
+    }
+    .hv-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .max-width-400 {
+        max-width: 400px;
+    } .albums {
+        /* Style go here */
+        display: flex; }
+        .albums > div {flex: 1 0;}
+       
+}
