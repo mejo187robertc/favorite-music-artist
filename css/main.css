@@ -18,7 +18,7 @@ img {
 .bq {
     border-left: 10px solid black;
     margin: 0;
-    padding-left: 10 px
+    padding-left: 10px;
 }
 /* Desktop Styles */
 @media (min-width: 767px) {
